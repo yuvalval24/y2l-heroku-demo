@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #FFFFFF;">
+        <a class="navbar-brand" href="/">
+            <img src="https://external-preview.redd.it/G-mwWmubsE1axprtuCKxwrcNdvKhgYaIueOjNHrKwmc.png?auto=webp&s=fd5143500e8eb2579845d1ed89d4ab12a0ef7b57" width="30" height="30" alt="">Seddit
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </ul>
+            <form action="/log_in" method="post">
+                <button class="log_in" type="submit">Log In</button>
+            </form>
+            <form action="/sign_up" method="post">
+                <button class="sign_up" type="submit">Sign Up</button>
+            </form>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="https://i.pinimg.com/736x/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.jpg" style="max-height: 30px;">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6" style="background-color: white;">
+                <div class="row">
+                    
+                </div>
+                <div class="row">
+                    <div class="col-1" style="background-color: none;">
+                        <form class="d-flex justify-content-center" action="home" method="post">
+                            <button class="vote" type="submit" value="upvote">&#8657</button>
+                        </form>
+                        <p class="d-flex justify-content-center" style="margin: 0px;">num</p>
+                        <form class="d-flex justify-content-center" action="home" method="post">
+                            <button class="vote" type="submit" value="downvote">&#8659</button>
+                        </form>
+                    </div>
+                    <div class="col-11">
+                        <a href="#">
+                        <img src="https://i.pinimg.com/736x/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.jpg" style="max-height: 20px;">
+                        <span>user</span>
+                        </a>
+                        <h3>Title</h3>
+                        <a href="/log_in"><button type="button" class="tag">tag</button></a>
+                        <p>content</p>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <a href="/log_in"><button type="button" class="btn btn-light"><img src="https://icon-library.com/images/comment-icon-png/comment-icon-png-2.jpg" style="max-height: 15px;">
+                            [num] comments</button></a>
+                            <a href="/log_in"><button type="button" class="btn btn-light">&#8625 share</button></a>
+                            <a href="/log_in"><button type="button" class="btn btn-light"><img src="https://icon-library.com/images/bookmark-icon-png/bookmark-icon-png-1.jpg" style="max-height: 15px;">
+                            add bookmark</button></a>
+                            <a href="/log_in"><button type="button" class="btn btn-light">&#9872 report</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</body>
+</html>
