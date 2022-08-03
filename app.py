@@ -2,7 +2,6 @@ from flask import Flask, redirect, request, render_template, url_for
 from flask import session as login_session
 import pyrebase
 
-
 app = Flask(  # Create a flask app
     __name__,
     template_folder='templates',  # Name of html file folder
